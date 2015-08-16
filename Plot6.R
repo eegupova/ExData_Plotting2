@@ -36,7 +36,7 @@ MV_NEI_select_yr <- merge(fips_code, MV_NEI_select_yr, by = "fips")
 ## Save in png file
 library(ggplot2)
 
-png("Plot6.png",width=480,height=480)
+png("Plot6.png",width=630,height=480)
 ggp <- ggplot(MV_NEI_select_yr, aes(x=year, y=Emissions, color=location)) +
     theme_bw() + geom_line(size=1.3) +
     geom_point(shape = 16, size = 3, aes(fill = location)) +
